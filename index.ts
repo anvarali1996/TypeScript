@@ -1,7 +1,6 @@
-enum Ens {
-    eglish,
-    uzbek = 5,
-    rus,
+const getData = (prop: any) => {
+    return prop.length;
 }
 
-console.log(Ens);
+console.log(getData("salom"));
+console.log(getData(123));
