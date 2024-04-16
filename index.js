@@ -1,24 +1,18 @@
-// interface someThing {
-//     id: number,
-//     name: string,
-//     status: string,
-//     birthYear: number | string,
-//     students: number | string[];
-// }
-// let obj: someThing = {
+var header2 = {
+    id: 1,
+    name: "Sattor",
+    hona: "X-7",
+    students: 123,
+};
+// let header1: sign = {
 //     id: 1,
-//     name: "Anvarjon",
-//     status: "married",
-//     birthYear: 1996,
-//     students: [],
-// }
-// console.log(obj.birthYear);
-//  Non-premetive object is changeing it's value
-// let obj1 = { name: "Front-end Developer" };
-// let obj2 = obj1;
-// obj2.name = "Backend Developer";
-// console.log(obj1);
-function getData(prop) {
-    console.log(prop.name);
-}
-getData({ name: "Good afternoon!!!" });
+//     name: "Gani",
+//     schedule: "Algebry",
+//     students: 123,
+//     moderaor: "Alex",
+// };
+var getData = function (i) {
+    // const getData = (i: keyof sign) => {
+    return header2[i];
+};
+console.log(getData("hona"));
